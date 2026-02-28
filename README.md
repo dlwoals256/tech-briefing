@@ -2,6 +2,8 @@
 A simple tech news briefer. Based on Claude.
 
 # Project Structure
+
+```
 tech-briefing/
 ├── .env
 ├── .gitignore
@@ -12,3 +14,4 @@ tech-briefing/
 ├── fetcher.py            # Fetch news by RSS
 ├── summarizer.py         # Call Claude API for summarization
 └── notifier.py           # Send brief by calling Discord webhook
+```
