@@ -20,7 +20,7 @@ tech-briefing/
 
 1. Fork this repository.
 2. [Get a Claude API key and charge.](https://platform.claude.com/dashboard)
-3. Make your Discord server and get a webhook URL[Reference](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
+3. Make your Discord server and get a webhook URL[(Reference)](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
 4. Set a secrets on your fork repository.
     - Set Claude API key as `ANTHROPIC_API_KEY`.
     - Set Discord Webhook URL as `DISCORD_WEBHOOK_URL`.
@@ -36,3 +36,8 @@ You can change the RSS server to others.
 
 You can change the prompt to your language(currently Korean).  
 Or change the format to the style that you prefer.
+
+## Check the `.github/workflows/briefing.yml` out.
+
+You can change the time which briefs to your Discord server by changing the value of `cron`.  
+Also you can test the pipeline by person to click the Run Workflow button on Actions.
