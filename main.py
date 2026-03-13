@@ -10,13 +10,20 @@ def main():
     articles = fetch_articles(max_per_feed=5)
     print(f"{len(articles)}개 기사 수집 완료")
 
-    print("요약 생성 중...")
-    briefing = summarize_articles(articles)
-    print("요약 완료")
+    try:
+        print("요약 생성 중...")
+        briefing = summarize_articles(articles)
+        print("요약 완료")
 
-    print("디스코드 전송 중...")
-    send_to_discord(briefing)
-    print("전송 완료!")
+        print("디스코드 전송 중...")
+        send_to_discord(briefing)
+        print("전송 완료!")
+    except Exception as e:
+        print("디스코드 전송 중...")
+        send_to_discord('[Error occured]: ' + e)
+        print("전송 완료!")
+
+    
 
 if __name__ == '__main__':
     main()
