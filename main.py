@@ -49,7 +49,7 @@ def main():
         print("전송 완료!")
     except Exception as e:
         print("디스코드 전송 중...")
-        send_to_discord('[Error occured]: ' + e, ENVS[0])
+        send_to_discord('[Error occured]: ' + str(e), ENVS[0])
         print("전송 완료!")
 
     
